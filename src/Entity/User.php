@@ -42,6 +42,11 @@ class User
      */
     private $maps;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $roles;
+
     public function __construct()
     {
         $this->maps = new ArrayCollection();
@@ -115,6 +120,18 @@ class User
                 $map->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getRoles(): ?string
+    {
+        return $this->roles;
+    }
+
+    public function setRoles(string $roles): self
+    {
+        $this->roles = $roles;
 
         return $this;
     }

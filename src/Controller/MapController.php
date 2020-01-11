@@ -27,7 +27,7 @@ class MapController extends AbstractFOSRestController
 
     /**
      * @Get(
-     *      path = "/maps/{id}",
+     *      path = "/api/maps/{id}",
      *      name = "app_maps_read", 
      *      requirements = {"id"="\d+"}
      * )
@@ -41,7 +41,7 @@ class MapController extends AbstractFOSRestController
 
     /**
      * @Get(
-     *      path = "/maps/",
+     *      path = "/api/maps/",
      *      name = "app_maps_read", 
      *      requirements = {"id"="\d+"}
      * )
@@ -61,7 +61,7 @@ class MapController extends AbstractFOSRestController
 
     /**
      * @Post(
-     *      path = "maps/",
+     *      path = "/api/maps/",
      *      name = "app_maps_create"
      * )
      * @View(StatusCode=201)
@@ -81,7 +81,7 @@ class MapController extends AbstractFOSRestController
 
     /**
      * @Delete(
-     *          path = "maps/{id}",
+     *          path = "/api/maps/{id}",
      *          name = "app_maps_delete",
      *          requirements = {"id"="\d+"}
      * )
@@ -99,7 +99,7 @@ class MapController extends AbstractFOSRestController
 
     /**
      * @Put(
-     *      path = "maps/{id}",
+     *      path = "/api/maps/{id}",
      *      name = "app_maps_update",
      *      requirements = {"id"="\d+"}
      * )

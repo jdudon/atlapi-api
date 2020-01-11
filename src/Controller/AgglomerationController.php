@@ -24,7 +24,7 @@ class AgglomerationController extends AbstractFOSRestController
 
    /**
     * @Get(
-    *      path = "/agglomerations/{id}",
+    *      path = "/api/agglomerations/{id}",
     *      name = "app_agglomerations_read", 
     *      requirements = {"id"="\d+"}
     * )
@@ -38,7 +38,7 @@ class AgglomerationController extends AbstractFOSRestController
 
    /**
     * @Get(
-    *      path = "/agglomerations/",
+    *      path = "/api/agglomerations/",
     *      name = "app_agglomerations_readAll", 
     * )
     * @View()
@@ -57,7 +57,7 @@ class AgglomerationController extends AbstractFOSRestController
 
    /**
     * @Post(
-    *      path = "agglomerations/",
+    *      path = "/api/agglomerations/",
     *      name = "app_agglomerations_create"
     * )
     * @View(StatusCode=201)
@@ -79,7 +79,7 @@ class AgglomerationController extends AbstractFOSRestController
 
    /**
     * @Delete(
-    *          path = "agglomerations/{id}",
+    *          path = "/api/agglomerations/{id}",
     *          name = "app_agglomerations_delete",
     *          requirements = {"id"="\d+"}
     * )
@@ -97,7 +97,7 @@ class AgglomerationController extends AbstractFOSRestController
 
    /**
     * @Put(
-    *      path = "agglomerations/{id}",
+    *      path = "/api/agglomerations/{id}",
     *      name = "app_agglomerations_update",
     *      requirements = {"id"="\d+"}
     * )

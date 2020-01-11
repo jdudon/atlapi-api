@@ -22,7 +22,7 @@ class BuildingController extends AbstractFOSRestController
 
    /**
     * @Get(
-    *      path = "/buildings/{id}",
+    *      path = "/api/buildings/{id}",
     *      name = "app_buildings_read", 
     *      requirements = {"id"="\d+"}
     * )
@@ -36,7 +36,7 @@ class BuildingController extends AbstractFOSRestController
 
    /**
     * @Get(
-    *      path = "/buildings/",
+    *      path = "/api//buildings/",
     *      name = "app_buildings_readAll", 
     * )
     * @View()
@@ -55,7 +55,7 @@ class BuildingController extends AbstractFOSRestController
 
    /**
     * @Post(
-    *      path = "buildings/",
+    *      path = "/api/buildings/",
     *      name = "app_buildings_create"
     * )
     * @View(StatusCode=201)
@@ -78,7 +78,7 @@ class BuildingController extends AbstractFOSRestController
 
    /**
     * @Delete(
-    *          path = "buildings/{id}",
+    *          path = "/api/buildings/{id}",
     *          name = "app_buildings_delete",
     *          requirements = {"id"="\d+"}
     * )
@@ -96,7 +96,7 @@ class BuildingController extends AbstractFOSRestController
 
    /**
     * @Put(
-    *      path = "buildings/{id}",
+    *      path = "/api/buildings/{id}",
     *      name = "app_buildings_update",
     *      requirements = {"id"="\d+"}
     * )

@@ -117,6 +117,12 @@ class MapController extends AbstractFOSRestController
         $update = $oldmap->setUniverseType($map->getUniverseType());
         $update = $oldmap->setInterestPoints($map->getInterestPoints());
 
+        // $agglomerations = $map->getAgglomerations();
+
+        // foreach ($agglomerations as $agglomeration) {
+        //     $oldmap->addAgglomeration($agglomeration);
+        // }
+
 
 
         $em = $this->getDoctrine()->getManager();
